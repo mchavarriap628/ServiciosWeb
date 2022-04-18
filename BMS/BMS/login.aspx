@@ -43,7 +43,14 @@
                             <asp:TableRow runat="server" HorizontalAlign="Center">
                                 <asp:TableCell runat="server" ColumnSpan="2">
                                     <br/>
-                                    <asp:Button ID="btnLogin" runat="server" Text="Iniciar Sesión" Width="200px" BackColor="Black" ForeColor="White"/>
+                                    <asp:Button ID="btnLogin" runat="server" Text="Iniciar Sesión" Width="200px" BackColor="Black" ForeColor="White" OnClick="btnLogin_Click"/>
+                                </asp:TableCell>
+                            </asp:TableRow>
+
+                            <asp:TableRow runat="server" HorizontalAlign="Center">
+                                <asp:TableCell runat="server" ColumnSpan="2">
+                                    <br/>
+                                    <asp:Label ID="txtQueryResult" runat="server" Text="..."></asp:Label>
                                 </asp:TableCell>
                             </asp:TableRow>
 
@@ -55,6 +62,9 @@
             </asp:Table>
 
         </div>
+
+
+        
 
 
     </form>
