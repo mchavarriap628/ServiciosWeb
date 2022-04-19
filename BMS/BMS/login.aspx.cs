@@ -24,32 +24,38 @@ namespace BMS
             SqlConnection conexion = new SqlConnection(s);
             conexion.Open();
 
-            SqlCommand comando = new SqlCommand("select * from [user] where email = '" + userEmail + "'", conexion);
+            SqlCommand comando = new SqlCommand("select * from usuarios where correo = '" + userEmail + "'", conexion);
 
             SqlDataReader registro = comando.ExecuteReader();
             if (registro.Read())
+            {
 
-                this.txtQueryResult.Text = registro["role"].ToString();
+                string correoDB = registro["correo"].ToString();
+                string contraDB = registro["contra"].ToString();
 
-               /* if (registro["name"].ToString().Equals(userEmail) && registro["password"].ToString().Equals(userPassword))
+                if (userEmail.Equals(correoDB) && userPassword.Equals(contraDB))
                 {
-                    if (registro["role"].ToString().Equals("admin"))
+
+                    string rol = registro["rol"].ToString();
+
+                    if (rol.Equals("admin"))
                     {
                         this.txtQueryResult.Text = "Es admin...";
                     }
-                    else if (registro["role"].ToString().Equals("contador"))
+                    else if (rol.Equals("contador"))
                     {
                         this.txtQueryResult.Text = "Es contador...";
+                        Response.Redirect("user.aspx");
                     }
                     else
                     {
                         this.txtQueryResult.Text = "Es empleado...";
                     }
                 }
-
+            }
             else
                 this.txtQueryResult.Text = "Credenciales invalidas..";
-            conexion.Close();*/
+         conexion.Close();
 
 
         }
