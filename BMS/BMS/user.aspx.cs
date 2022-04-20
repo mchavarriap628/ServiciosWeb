@@ -13,5 +13,15 @@ namespace BMS
         {
 
         }
+
+        protected void btnPlanillas_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("planillas.aspx");
+        }
+
+        protected void btnFacturas_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("facturas.aspx");
+        }
     }
 }
