@@ -41,6 +41,7 @@ namespace BMS
                     if (rol.Equals("admin"))
                     {
                         this.txtQueryResult.Text = "Es admin...";
+                        Response.Redirect("admin.aspx");
                     }
                     else if (rol.Equals("contador"))
                     {

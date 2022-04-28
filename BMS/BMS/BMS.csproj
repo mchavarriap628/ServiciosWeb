@@ -105,12 +105,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="crearFactura.aspx" />
+    <Content Include="crearUser.aspx" />
+    <Content Include="editarUser.aspx" />
+    <Content Include="eliminarUser.aspx" />
     <Content Include="facturas.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -162,6 +166,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="crearFactura.aspx.cs">
@@ -170,6 +181,27 @@
     </Compile>
     <Compile Include="crearFactura.aspx.designer.cs">
       <DependentUpon>crearFactura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="crearUser.aspx.cs">
+      <DependentUpon>crearUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="crearUser.aspx.designer.cs">
+      <DependentUpon>crearUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editarUser.aspx.cs">
+      <DependentUpon>editarUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editarUser.aspx.designer.cs">
+      <DependentUpon>editarUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eliminarUser.aspx.cs">
+      <DependentUpon>eliminarUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eliminarUser.aspx.designer.cs">
+      <DependentUpon>eliminarUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="facturas.aspx.cs">
       <DependentUpon>facturas.aspx</DependentUpon>
