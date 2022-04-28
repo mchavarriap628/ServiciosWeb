@@ -17,22 +17,31 @@ namespace BMS
 
         protected void btnCrearEmpleado_Click(object sender, EventArgs e)
         {
-            string s = System.Configuration.ConfigurationManager.ConnectionStrings["cadenaconexion1"].ConnectionString;
-            SqlConnection conexion = new SqlConnection(s);
-            conexion.Open();
-            SqlCommand comando = new SqlCommand("insert into usuarios(nombre,correo,contra,rol) values('" + txtNombre.Text + "','" +
-                txtCorreo.Text + "','" +
-                txtContrasena.Text + "','" + listRol.SelectedValue + "')", conexion);
-            comando.ExecuteNonQuery();
 
-            SqlCommand comando2 = new SqlCommand("insert into salarios(correo_empleado,salario) values('" + txtCorreo.Text + "','" +
-                txtSalario.Text + "')", conexion);
-            comando2.ExecuteNonQuery();
+            if (txtContrasena.Text == string.Empty || txtCorreo.Text == string.Empty || txtNombre.Text == string.Empty || txtSalario.Text == string.Empty)
+            {
+                Label7.Visible = true;
+                Label7.Text = "Todos los campos son obligatorios, verifique que la información este completa.";
+            }
+            else
+            {
+                string s = System.Configuration.ConfigurationManager.ConnectionStrings["cadenaconexion1"].ConnectionString;
+                SqlConnection conexion = new SqlConnection(s);
+                conexion.Open();
+                SqlCommand comando = new SqlCommand("insert into usuarios(nombre,correo,contra,rol) values('" + txtNombre.Text + "','" +
+                    txtCorreo.Text + "','" +
+                    txtContrasena.Text + "','" + listRol.SelectedValue + "')", conexion);
+                comando.ExecuteNonQuery();
+
+                SqlCommand comando2 = new SqlCommand("insert into salarios(correo_empleado,salario) values('" + txtCorreo.Text + "','" +
+                    txtSalario.Text + "')", conexion);
+                comando2.ExecuteNonQuery();
 
 
-            Label7.Visible = true;
-            Label7.Text = "El empleado " + txtCorreo.Text + " se creó con éxito.";
-            conexion.Close(); 
+                Label7.Visible = true;
+                Label7.Text = "El empleado " + txtCorreo.Text + " se creó con éxito.";
+                conexion.Close();
+            }
 
         }
 
@@ -60,6 +69,11 @@ namespace BMS
                 this.btnMostrar.Text = "Mostrar";
 
             }
+        }
+
+        protected void btnVolver_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("admin.aspx");
         }
     }
 }

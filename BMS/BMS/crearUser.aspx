@@ -47,6 +47,8 @@
         <asp:Button ID="btnCrearEmpleado" runat="server" OnClick="btnCrearEmpleado_Click" Text="Crear" />
         &nbsp;&nbsp;
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Limpiar" />
+        &nbsp;&nbsp;
+        <asp:Button ID="btnVolver" runat="server" OnClick="btnVolver_Click" Text="Volver" />
         <br />
         <br />
         <asp:Label ID="Label7" runat="server" Text="Label" Visible="False"></asp:Label>

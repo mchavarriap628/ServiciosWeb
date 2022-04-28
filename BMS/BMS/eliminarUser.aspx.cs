@@ -40,5 +40,10 @@ namespace BMS
         {
             Response.Redirect(HttpContext.Current.Request.Url.ToString(), true);
         }
+
+        protected void btnVolver_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("admin.aspx");
+        }
     }
 }
