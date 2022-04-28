@@ -57,6 +57,8 @@
         <asp:Button ID="btnGuardar" runat="server" OnClick="btnGuardar_Click" Text="Guardar" />
         &nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Limpiar" />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="btnVolver" runat="server" OnClick="btnVolver_Click" Text="Volver" />
         <br />
         <br />
         <asp:Label ID="Label7" runat="server" Text="Label" Visible="False"></asp:Label>

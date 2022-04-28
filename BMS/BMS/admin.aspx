@@ -21,7 +21,11 @@
         <asp:Button ID="btnEditUser" runat="server" OnClick="btnEditUser_Click" Text="Editar empleado" Width="223px" />
         <br />
         <br />
-        <asp:Button ID="btnDeleteUser" runat="server" OnClick="btnDeleteUser_Click" Text="Eliminar empleado" Width="225px" />
+        <asp:Button ID="btnDeleteUser" runat="server" OnClick="btnDeleteUser_Click" Text="Eliminar empleado" Width="222px" />
+        <br />
+        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="btnSalir" runat="server" OnClick="btnSalir_Click" Text="Salir" Width="132px" />
     </form>
 </body>
 </html>

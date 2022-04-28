@@ -23,6 +23,8 @@
         <asp:Button ID="bntEliminar" runat="server" OnClick="bntEliminar_Click" Text="Eliminar" />
         &nbsp;&nbsp;
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Limpiar" />
+        &nbsp;&nbsp;&nbsp;
+        <asp:Button ID="btnVolver" runat="server" OnClick="btnVolver_Click" Text="Volver" />
         <br />
         <br />
         <asp:Label ID="Label3" runat="server" Text="Label" Visible="False"></asp:Label>

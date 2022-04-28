@@ -28,5 +28,10 @@ namespace BMS
         {
             Response.Redirect("eliminarUser.aspx");
         }
+
+        protected void btnSalir_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("login.aspx");
+        }
     }
 }
