@@ -11,7 +11,7 @@ namespace BMS
 {
 
 
-    public partial class planillas
+    public partial class Design_Test
     {
 
         /// <summary>

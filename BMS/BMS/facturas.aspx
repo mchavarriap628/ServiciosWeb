@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+<link href="css/general.css" rel="stylesheet" />
     <title>Facturas - Seguimiento</title>
     <style>
         *{}
@@ -12,6 +13,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <h1>&nbsp;</h1>
+            <h1>&nbsp;</h1>
             <h1>Facturas</h1>
             <asp:Label ID="Label1" runat="server" Text="Número de factura"></asp:Label>
             <asp:DropDownList ID="ddNumeroFactura" runat="server" Height="18px" Width="183px" OnInit="ddNumeroFactura_Init">

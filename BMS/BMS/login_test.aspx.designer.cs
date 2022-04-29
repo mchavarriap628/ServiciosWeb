@@ -11,7 +11,7 @@ namespace BMS
 {
 
 
-    public partial class planillas
+    public partial class WebForm1
     {
 
         /// <summary>
