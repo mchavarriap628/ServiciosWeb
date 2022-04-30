@@ -31,7 +31,7 @@ namespace BMS
 
         protected void btnSalir_Click(object sender, EventArgs e)
         {
-            Response.Redirect("login.aspx");
+
         }
     }
 }
