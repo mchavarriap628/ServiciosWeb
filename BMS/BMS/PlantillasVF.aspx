@@ -31,7 +31,7 @@
         <div class="general-boxes">
           
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Label ID="Label1" runat="server" Font-Size="X-Large" Text="PLANILLAS"></asp:Label>
+        <asp:Label ID="Label1" runat="server" Font-Size="X-Large" Text="PLANILLAS" Font-Bold="True"></asp:Label>
         <br />
         Seleccione el colaborador&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:DropDownList ID="ddNumeroUsuario" runat="server" DataSourceID="SqlDataSource2" DataTextField="correo_empleado" DataValueField="correo_empleado" BorderStyle="Double" BackColor="#c0c0c0" ForeColor="Black">
@@ -63,7 +63,7 @@
         <br />
         <br />
         Pensión:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="TextBoxPensión" runat="server" BorderStyle="Double" BackColor="#c0c0c0" ForeColor="Black"></asp:TextBox>
+        <asp:TextBox ID="TextBoxPension" runat="server" BorderStyle="Double" BackColor="#c0c0c0" ForeColor="Black"></asp:TextBox>
             <br />
         <br />
         Seguro&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
