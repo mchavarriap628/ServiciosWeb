@@ -113,11 +113,17 @@
     <Content Include="Content\Site.css" />
     <Content Include="crearFactura.aspx" />
     <Content Include="crearUser.aspx" />
+    <Content Include="css\general.css" />
+    <Content Include="css\iconos.css" />
+    <Content Include="css\master.css" />
+    <Content Include="Design_Test.aspx" />
     <Content Include="editarUser.aspx" />
     <Content Include="eliminarUser.aspx" />
     <Content Include="facturas.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="font\fontello.css" />
+    <Content Include="font\fontello.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -127,9 +133,19 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="font\fontello.eot" />
+    <Content Include="font\fontello.ttf" />
+    <Content Include="font\fontello.woff" />
+    <Content Include="font\fontello.woff2" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="images\general_icon.png" />
+    <Content Include="images\icono-menu.png" />
+    <Content Include="images\icono_admin.png" />
+    <Content Include="images\icono_user.png" />
+    <Content Include="images\main_icon.png" />
     <Content Include="login.aspx" />
-    <Content Include="planillas.aspx" />
+    <Content Include="login_test.aspx" />
+    <Content Include="PlantillasVF.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -189,6 +205,13 @@
     <Compile Include="crearUser.aspx.designer.cs">
       <DependentUpon>crearUser.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Design_Test.aspx.cs">
+      <DependentUpon>Design_Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Design_Test.aspx.designer.cs">
+      <DependentUpon>Design_Test.aspx</DependentUpon>
+    </Compile>
     <Compile Include="editarUser.aspx.cs">
       <DependentUpon>editarUser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -220,12 +243,19 @@
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="planillas.aspx.cs">
-      <DependentUpon>planillas.aspx</DependentUpon>
+    <Compile Include="login_test.aspx.cs">
+      <DependentUpon>login_test.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="planillas.aspx.designer.cs">
-      <DependentUpon>planillas.aspx</DependentUpon>
+    <Compile Include="login_test.aspx.designer.cs">
+      <DependentUpon>login_test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlantillasVF.aspx.cs">
+      <DependentUpon>PlantillasVF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlantillasVF.aspx.designer.cs">
+      <DependentUpon>PlantillasVF.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
