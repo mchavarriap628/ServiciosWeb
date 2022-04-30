@@ -18,55 +18,55 @@
             <h1>Login BMP</h1>
             <form>
                 <asp:Table ID="Table1" runat="server" Width="487px">
-                <asp:TableRow runat="server">
+                    <asp:TableRow runat="server">
 
-                    <asp:TableCell runat="server">
+                        <asp:TableCell runat="server">
                         <meta charset="utf-8" />
-                    </asp:TableCell>
-                    <asp:TableCell runat="server" HorizontalAlign="Center">
-                        <!--Login-->
-                        <asp:Table ID="tbLogin" runat="server">
-                            <asp:TableRow runat="server">
-                                <asp:TableCell runat="server">Nombre de usuario  </asp:TableCell>
-                                <asp:TableCell runat="server">
-                                    <asp:TextBox ID="txtUsuario" runat="server" BorderColor="White" TextMode="Email"></asp:TextBox>
-                                </asp:TableCell>
-                            </asp:TableRow>
+                        </asp:TableCell>
+                        <asp:TableCell runat="server" HorizontalAlign="Center">
+                            <!--Login-->
+                            <asp:Table ID="tbLogin" runat="server">
+                                <asp:TableRow runat="server">
+                                    <asp:TableCell runat="server">Nombre de usuario  </asp:TableCell>
+                                    <asp:TableCell runat="server">
+                                        <asp:TextBox ID="txtUsuario" runat="server" BorderColor="White" TextMode="Email"></asp:TextBox>
+                                    </asp:TableCell>
+                                </asp:TableRow>
 
-                            <asp:TableRow runat="server">
-                                <asp:TableCell runat="server" HorizontalAlign="Left">Contraseña  </asp:TableCell>
-                                <asp:TableCell runat="server">
-                                    <asp:TextBox ID="txtPassword" runat="server" BorderColor="White" TextMode="Password"></asp:TextBox>
-                                </asp:TableCell>
-                            </asp:TableRow>
+                                <asp:TableRow runat="server">
+                                    <asp:TableCell runat="server" HorizontalAlign="Left">Contraseña  </asp:TableCell>
+                                    <asp:TableCell runat="server">
+                                        <asp:TextBox ID="txtPassword" runat="server" BorderColor="White" TextMode="Password"></asp:TextBox>
+                                    </asp:TableCell>
+                                </asp:TableRow>
 
-                            <asp:TableRow runat="server" HorizontalAlign="Center">
-                                <asp:TableCell runat="server" ColumnSpan="2">
-                                    <br/>
-                                    <asp:Button ID="btnLogin" runat="server" Text="Iniciar Sesión" Width="200px" BackColor="#ffcc00" ForeColor="Black" OnClick="btnLogin_Click"/>
-                                </asp:TableCell>
-                            </asp:TableRow>
+                                <asp:TableRow runat="server" HorizontalAlign="Center">
+                                    <asp:TableCell runat="server" ColumnSpan="2">
+                                        <br />
+                                        <asp:Button ID="btnLogin" runat="server" Text="Iniciar Sesión" Width="200px" BackColor="#ffcc00" ForeColor="Black" OnClick="btnLogin_Click" />
+                                    </asp:TableCell>
+                                </asp:TableRow>
 
-                            <asp:TableRow runat="server" HorizontalAlign="Center">
-                                <asp:TableCell runat="server" ColumnSpan="2">
-                                    <br/>
-                                    <asp:Label ID="txtQueryResult" runat="server" Text="..."></asp:Label>
-                                </asp:TableCell>
-                            </asp:TableRow>
+                                <asp:TableRow runat="server" HorizontalAlign="Center">
+                                    <asp:TableCell runat="server" ColumnSpan="2">
+                                        <br />
+                                        <asp:Label ID="txtQueryResult" runat="server" Text="..."></asp:Label>
+                                    </asp:TableCell>
+                                </asp:TableRow>
 
-                        </asp:Table>
-                        <!--Login-->
-                    </asp:TableCell>
+                            </asp:Table>
+                            <!--Login-->
+                        </asp:TableCell>
 
-                </asp:TableRow>
-            </asp:Table>
+                    </asp:TableRow>
+                </asp:Table>
             </form>
-            
+
 
         </div>
 
 
-        
+
 
 
     </form>
