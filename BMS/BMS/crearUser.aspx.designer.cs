@@ -11,7 +11,7 @@ namespace BMS
 {
 
 
-    public partial class facturas
+    public partial class crearUser
     {
 
         /// <summary>
@@ -33,24 +33,6 @@ namespace BMS
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// Control ddNumeroFactura.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddNumeroFactura;
-
-        /// <summary>
-        /// Control btnBuscarFactura.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBuscarFactura;
-
-        /// <summary>
         /// Control Label2.
         /// </summary>
         /// <remarks>
@@ -60,13 +42,13 @@ namespace BMS
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// Control txtCliente.
+        /// Control txtNombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCliente;
+        protected global::System.Web.UI.WebControls.TextBox txtNombre;
 
         /// <summary>
         /// Control Label3.
@@ -78,40 +60,13 @@ namespace BMS
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// Control rbPendiente.
+        /// Control txtCorreo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbPendiente;
-
-        /// <summary>
-        /// Control rbCancelada.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbCancelada;
-
-        /// <summary>
-        /// Control btnCambiarEstado.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCambiarEstado;
-
-        /// <summary>
-        /// Control txtResultadoCambioEstado.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label txtResultadoCambioEstado;
+        protected global::System.Web.UI.WebControls.TextBox txtCorreo;
 
         /// <summary>
         /// Control Label4.
@@ -123,13 +78,13 @@ namespace BMS
         protected global::System.Web.UI.WebControls.Label Label4;
 
         /// <summary>
-        /// Control txtDescripcionCargo.
+        /// Control listRol.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDescripcionCargo;
+        protected global::System.Web.UI.WebControls.DropDownList listRol;
 
         /// <summary>
         /// Control Label5.
@@ -141,12 +96,75 @@ namespace BMS
         protected global::System.Web.UI.WebControls.Label Label5;
 
         /// <summary>
-        /// Control txtMonto.
+        /// Control txtSalario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMonto;
+        protected global::System.Web.UI.WebControls.TextBox txtSalario;
+
+        /// <summary>
+        /// Control Label6.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label6;
+
+        /// <summary>
+        /// Control txtContrasena.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtContrasena;
+
+        /// <summary>
+        /// Control btnMostrar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnMostrar;
+
+        /// <summary>
+        /// Control btnCrearEmpleado.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCrearEmpleado;
+
+        /// <summary>
+        /// Control Button1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
+
+        /// <summary>
+        /// Control btnVolver.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnVolver;
+
+        /// <summary>
+        /// Control Label7.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label7;
     }
 }

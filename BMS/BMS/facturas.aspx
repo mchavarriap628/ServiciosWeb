@@ -3,25 +3,44 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Selecciono el diseño de CSS -->
+<link href="css/general.css" rel="stylesheet" />
+<link href="css/iconos.css" rel="stylesheet" />
+
 <head runat="server">
-    <title>Facturas - Seguimiento</title>
+    <title>BMP Facturas</title>
     <style>
         *{}
     </style>
 </head>
 <body>
+    <!-- INICIO MENU VERTICAL -->
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu" class="icon-menu"></label>
+            </div>
+        </div>
+    </header>
+     <!-- FIN MENU VERTICAL -->
     <form id="form1" runat="server">
-        <div>
-            <h1>Facturas</h1>
+        <div class="general-boxes">
+
+<div>
+            <center>
+<h1>Facturas</h1>
+            </center>
+            
             <asp:Label ID="Label1" runat="server" Text="Número de factura"></asp:Label>
-            <asp:DropDownList ID="ddNumeroFactura" runat="server" Height="18px" Width="183px" OnInit="ddNumeroFactura_Init">
+            &nbsp;<asp:DropDownList ID="ddNumeroFactura" runat="server" Height="18px" Width="183px" OnInit="ddNumeroFactura_Init" BorderStyle="Double" BackColor="#c0c0c0" ForeColor="Black">
             </asp:DropDownList>
-            <asp:Button ID="btnBuscarFactura" runat="server" OnClick="btnBuscarFactura_Click" Text="Buscar factura" />
+            &nbsp;<asp:Button ID="btnBuscarFactura" runat="server" OnClick="btnBuscarFactura_Click" Text="Buscar factura" CssClass="boton_validar"/>
+            <br />
             <br />
         </div>
 
         <asp:Label ID="Label2" runat="server" Text="Cliente"></asp:Label>
-        <asp:TextBox ID="txtCliente" runat="server"></asp:TextBox>
+        &nbsp;<asp:TextBox ID="txtCliente" runat="server" BorderStyle="Double" BackColor="#c0c0c0" ForeColor="Black"></asp:TextBox>
         <br />
         <br />
 
@@ -29,28 +48,39 @@
         <asp:RadioButton ID="rbPendiente" runat="server" GroupName="rgEstado" Text="Pendiente" Checked="true"/>
         <asp:RadioButton ID="rbCancelada" runat="server" GroupName="rgEstado" Text="Cancelada" />
         <br />
-        <asp:Button ID="btnCambiarEstado" runat="server" OnClick="btnCambiarEstado_Click" Text="Cambiar estado" Width="196px" />
+        <asp:Button ID="btnCambiarEstado" runat="server" OnClick="btnCambiarEstado_Click" Text="Cambiar estado" Width="196px" CssClass="boton_general"/>
 &nbsp;<br />
         <asp:Label ID="txtResultadoCambioEstado" runat="server" Text="..."></asp:Label>
         <br />
-        <br />
 
         <asp:Label ID="Label4" runat="server" Text="Descripción del cargo"></asp:Label><br />
-        <asp:TextBox ID="txtDescripcionCargo" runat="server" Height="187px" Width="276px" Enabled="False" TextMode="MultiLine"></asp:TextBox>
+        <asp:TextBox ID="txtDescripcionCargo" runat="server" Height="76px" Width="512px" Enabled="False" TextMode="MultiLine" BorderStyle="Double" BackColor="#c0c0c0" ForeColor="Black"></asp:TextBox>
         <br />
         <br />
 
         <asp:Label ID="Label5" runat="server" Text="Monto"></asp:Label>
-        <asp:TextBox ID="txtMonto" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtMonto" runat="server" BorderStyle="Double" BackColor="#c0c0c0" ForeColor="Black"></asp:TextBox>
         <br />
+        
         <br />
-
-        <asp:Button ID="btnGenerarFactura" runat="server" Text="Generar nueva factura" OnClick="btnGenerarFactura_Click" Width="190px" />
-        <br />
-        <p>
-            <asp:Button ID="btnRegresar" runat="server" OnClick="btnRegresar_Click" Text="Regresar al menú" Width="190px" />
-        </p>
+        </div>
+        
 
     </form>
+
+    <!-- Checkbox del menu VERTICAL -->
+<input type="checkbox" id="btn-menu" />
+<div class="container-menu">
+    <div class="cont-menu">
+        <nav>
+            <h1 style="color: white;">Menú usuario</h1>
+            <a href="user.aspx">Inicio</a>
+            <a href="facturas.aspx">Facturas</a>
+            <a href="crearFactura.aspx">Crear factura</a>
+            <a href="login.aspx">Salir</a>
+        </nav>
+        <label for="btn-menu" class="icon-equis"></label>
+    </div>
+</div>
 </body>
 </html>

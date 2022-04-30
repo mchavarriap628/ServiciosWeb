@@ -11,7 +11,7 @@ namespace BMS
 {
 
 
-    public partial class facturas
+    public partial class PlantillasVF
     {
 
         /// <summary>
@@ -33,22 +33,40 @@ namespace BMS
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// Control ddNumeroFactura.
+        /// Control ddNumeroUsuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddNumeroFactura;
+        protected global::System.Web.UI.WebControls.DropDownList ddNumeroUsuario;
 
         /// <summary>
-        /// Control btnBuscarFactura.
+        /// Control Button1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBuscarFactura;
+        protected global::System.Web.UI.WebControls.Button Button1;
+
+        /// <summary>
+        /// Control SqlDataSource2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
+
+        /// <summary>
+        /// Control SqlDataSource1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
 
         /// <summary>
         /// Control Label2.
@@ -60,13 +78,31 @@ namespace BMS
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// Control txtCliente.
+        /// Control TextBoxSalarioBase.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCliente;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxSalarioBase;
+
+        /// <summary>
+        /// Control TextBoxBonos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxBonos;
+
+        /// <summary>
+        /// Control TextBoxTotaldeIngresos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxTotaldeIngresos;
 
         /// <summary>
         /// Control Label3.
@@ -78,40 +114,31 @@ namespace BMS
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// Control rbPendiente.
+        /// Control TextBoxPensión.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbPendiente;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxPensión;
 
         /// <summary>
-        /// Control rbCancelada.
+        /// Control TextBoxSeguro.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbCancelada;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxSeguro;
 
         /// <summary>
-        /// Control btnCambiarEstado.
+        /// Control Totaldeducciones.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCambiarEstado;
-
-        /// <summary>
-        /// Control txtResultadoCambioEstado.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label txtResultadoCambioEstado;
+        protected global::System.Web.UI.WebControls.TextBox Totaldeducciones;
 
         /// <summary>
         /// Control Label4.
@@ -123,30 +150,30 @@ namespace BMS
         protected global::System.Web.UI.WebControls.Label Label4;
 
         /// <summary>
-        /// Control txtDescripcionCargo.
+        /// Control TextBoxTotalAPagar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDescripcionCargo;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxTotalAPagar;
 
         /// <summary>
-        /// Control Label5.
+        /// Control btnPagar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label5;
+        protected global::System.Web.UI.WebControls.Button btnPagar;
 
         /// <summary>
-        /// Control txtMonto.
+        /// Control btnLimpiar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMonto;
+        protected global::System.Web.UI.WebControls.Button btnLimpiar;
     }
 }
