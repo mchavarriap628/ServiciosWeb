@@ -77,6 +77,7 @@
             <a href="user.aspx">Inicio</a>
             <a href="facturas.aspx">Facturas</a>
             <a href="crearFactura.aspx">Crear factura</a>
+            <a href="Reportes.aspx">Reportes</a>
             <a href="login.aspx">Salir</a>
         </nav>
         <label for="btn-menu" class="icon-equis"></label>
